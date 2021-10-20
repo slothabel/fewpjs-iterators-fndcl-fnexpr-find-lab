@@ -7,9 +7,15 @@
 // If no win is found, it should return, sadly, undefined
 
 // roommates.find( function(s) { return s === "winston" })
-
+//  result === "W"
+// const wonGame = obj.find(({result}) => console.log(result))
 function superbowlWin(obj){
-    const wonGame = obj.find(({result}) => result === "W")
-     console.log(wonGame)
-    // return wonGame
+    const wonGame = obj.find((result) => console.log(result))
+    //  console.log(wonGame['year'])
+    if(wonGame){
+        return wonGame['year']
+    }
+    else{
+        return undefined 
+    }
 }
