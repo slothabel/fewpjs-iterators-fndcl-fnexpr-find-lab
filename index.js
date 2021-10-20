@@ -8,9 +8,9 @@
 
 // roommates.find( function(s) { return s === "winston" })
 //  result === "W"
-// const wonGame = obj.find(({result}) => console.log(result))
 function superbowlWin(obj){
-    const wonGame = obj.find((result) => console.log(result))
+    const wonGame = obj.find(({result}) => console.log(result))
+    // const wonGame = obj.find((result) => console.log(result))
     //  console.log(wonGame['year'])
     if(wonGame){
         return wonGame['year']
